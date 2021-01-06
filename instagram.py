@@ -16,13 +16,13 @@ with open('Nouveau document texte.json', 'w') as jsonFile:
     json.dump(results, jsonFile)
 
 conn = pyodbc.connect('DRIVER={SQL Server};'
-                      'SERVER=DESKTOP-VI25AP9;'
+                      'SERVER=DESKTOP-DQHM2SB;'
                       'DATABASE=Api-Instagram;'
                       'Trusted_Connection=yes;')
 cursor = conn.cursor()
 
 cursor.execute("""DECLARE @json NVARCHAR(MAX); SET @json = (SELECT  * FROM OPENROWSET 
-(BULK 'C:\\Users\\Fouzi\\PycharmProjects\\untitled\\BDDAPI\\Nouveau document texte.json',SINGLE_CLOB) AS json);
+(BULK 'C:\\Users\\Bensammar\\PycharmProjects\\pythonProject7\\Nouveau document texte.json',SINGLE_CLOB) AS json);
 
 IF OBJECT_ID('dbo.user_actualite') IS NOT NULL
   DROP TABLE dbo.user_actualite;
