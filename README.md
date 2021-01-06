@@ -14,7 +14,6 @@ les objectifs de ce Projet : Remplir une base de données à partir d'une API do
 
 le schema relationnel
 #
-le schema relationnel
 ![Capture](https://user-images.githubusercontent.com/74276606/103792383-dca89a00-5043-11eb-9a6d-39bb49a269f1.PNG)
 
 #
