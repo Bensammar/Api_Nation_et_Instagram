@@ -15,7 +15,7 @@ def save_to_database(reponse_json):
     cursor = conn.cursor()
 
     cursor.execute("""DECLARE @json NVARCHAR(MAX); SET @json = (SELECT  * FROM OPENROWSET 
-    (BULK 'C:\\Users\\Fouzi\\PycharmProjects\\untitled\\BDDAPI\\reponse_json_countries.json',SINGLE_CLOB) AS json);    
+    (BULK 'C:\\Users\\Bensammar\\PycharmProjects\\pythonProject7\\reponse_json_countries.json',SINGLE_CLOB) AS json);    
       
     IF OBJECT_ID('dbo.currencies') IS NOT NULL
       DROP TABLE dbo.currencies;
